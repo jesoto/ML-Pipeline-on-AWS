@@ -1,0 +1,12 @@
+{
+    "Name": "TriggerMLPipeline",
+    "ScheduleExpression": "rate(1 day)",
+    "State": "ENABLED",
+    "Targets": [
+      {
+        "Arn": "arn:aws:sagemaker:region:account:pipeline/ml-automatizado-pipeline",
+        "RoleArn": "arn:aws:iam::account:role/service-role/AmazonSageMaker-ExecutionRole"
+      }
+    ]
+  }
+  
